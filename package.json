@@ -1,0 +1,21 @@
+{
+  "name": "uganda-future-fund",
+  "version": "1.0.0",
+  "description": "website for the Uganda Future Fund",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/willbach/uganda-future-fund"
+  },
+  "author": "William Galebach",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
