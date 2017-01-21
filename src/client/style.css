@@ -1,0 +1,118 @@
+html{
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  padding: 0;
+  color: black;
+}
+
+/* Navbar Styles */
+
+.nav {
+  height: 6vh;
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 5px;
+}
+
+.navbar > li {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.navbar-left {
+  padding-right: 2vw;
+  padding-left: 2vw;
+}
+
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.nav-item {
+  padding: 5px;
+  padding-right: 2vw;
+  padding-left: 2vw;
+}
+
+.nav-item:hover {
+  background-color: lightgrey;
+}
+
+/* Mission */
+header {
+  background-image: url("https://cloudfront.safaribookings.com/library/uganda/xxl/Kibale_Forest_National_Park_009.jpg");
+  background-size: cover;
+
+  height: 95vh;
+  margin: 0;
+  margin-top: 0px;
+  display: flex;
+  justify-content: left;
+}
+.mission {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+  margin-left: 1vw;
+  background-color: white;
+  opacity: 0.5;
+  width: 20vw;
+  min-width: 200px;
+  padding: 0px 10px 0px 10px;
+  border-radius: 10px;
+}
+.mission-text {
+
+}
+
+
+/* Content */
+.content {
+  margin-top: 5px;
+}
+
+/* Portfolio */
+.section-title {
+  margin-left: 2vw;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.portfolio-item {
+  display: inline-block;
+}
+
+.portfolio-item-header {
+
+}
+
+.portfolio-item-text {
+
+}
