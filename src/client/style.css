@@ -107,6 +107,7 @@ header {
 
 .portfolio-item {
   display: inline-block;
+  width: 25vw;
 }
 
 .portfolio-item-header {
@@ -114,5 +115,26 @@ header {
 }
 
 .portfolio-item-text {
+
+}
+
+.bio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bio-item {
+  display: inline-block;
+  width: 25vw;
+}
+
+.bio-item-header {
+
+}
+
+.bio-item-text {
 
 }
