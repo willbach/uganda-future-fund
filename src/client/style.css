@@ -246,10 +246,7 @@ footer {
   header {
 
   }
-  .nav {
-    display: none;
-  }
-  .navbar-left {
+  .navbar-right .hide-small {
     display: none;
   }
   .portfolio-item {
@@ -267,7 +264,7 @@ footer {
     height: 20vh;
   }
   header {
-    height: 100vh;
+    height: 95vh;
   }
   .mission {
     margin-top: 10vh;
