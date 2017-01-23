@@ -5,7 +5,7 @@ const emailCtrl = require('./emailCtrl.js');
 
 const app = express();
 
-const PORT = 2000;
+const PORT = 80;
 
 app.use(bodyParser.urlencoded({extended: true}), bodyParser.json());
 app.use(express.static(path.join(__dirname, './../client')));
