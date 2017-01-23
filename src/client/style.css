@@ -246,15 +246,42 @@ footer {
   header {
 
   }
-  .navbar {
-    justify-content: flex-start;
+  .nav {
+    display: none;
   }
   .navbar-left {
     display: none;
   }
   .portfolio-item {
     width: 80vw;
-    height: 60vh;
+    height: 40vh;
+    margin-top: 5vh;
   }
-  
+  .portfolio-item:nth-child(1) {
+    margin-top: 0px;
+  }
+  .contact-input {
+    width: 80vw;
+  }
+  .contact-comment {
+    height: 20vh;
+  }
+  header {
+    height: 100vh;
+  }
+  .mission {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+    margin-left: 1vw;
+    background-color: white;
+    opacity: 0.7;
+    width: 50vw;
+    min-width: 200px;
+    height: 70vh;
+    min-height: 450px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+  }
 }
