@@ -126,22 +126,25 @@
 
 <script>
 //change the home background image
-const images = ['mountain_landscape.jpg', 'coffee_beans.jpg', 'tea_farmer.jpg'];
-const offsets = ['0% 85%', '0% 0%', '0% 70%']
-let curImg = 1;
+const image1 = { image: 'coffee_beans.jpg', offset: '0% 0%' };
+const image2 = { image: 'mountain_landscape.jpg', offset: '0% 85%' };
+const image3 = { image: 'tea_farmer.jpg', offset: '0% 70%' };
+image1.next = image2;
+image2.next = image3;
+image3.next = image1;
 
-function changeHeaderImage(image, offset) {
+let curImg = image1;
+
+function changeHeaderImage(image) {
   let header = document.getElementById('home');
-  header.style.backgroundImage = `url("./images/${image}")`;
-  header.style.backgroundPosition = offset;
+  header.style.backgroundImage = `url("./images/${image.image}")`;
+  header.style.backgroundPosition = image.offset;
 }
 
-changeHeaderImage(images[0], offsets[0]);
+changeHeaderImage(curImg);
 
 setInterval( () => {
-  changeHeaderImage(images[curImg], offsets[curImg]);
-  curImg++;
-  if(curImg === 3) curImg = 0;
+  changeHeaderImage(curImg = curImg.next);
 }, 5000);
 
 //confirm contact us submittal
