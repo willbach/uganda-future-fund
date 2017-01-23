@@ -241,3 +241,20 @@ footer {
   margin-top: 5vh;
   height: 10vh;
 }
+
+@media (max-width: 1000px) {
+  header {
+
+  }
+  .navbar {
+    justify-content: flex-start;
+  }
+  .navbar-left {
+    display: none;
+  }
+  .portfolio-item {
+    width: 80vw;
+    height: 60vh;
+  }
+  
+}
