@@ -24,8 +24,11 @@
 <!-- Header -->
 <header id="home">
   <div class="mission">
-    <h1 class="mission-title">TUFF Mission</h1>
-    <p class="mission-text">TUFF is dedicated to investments that will improve the future of Uganda</p>
+    <h1 class="mission-title">Our Mission</h1>
+    <p class="mission-text">
+      The Uganda Future Fund (TUFF) deploys capital and human resources in high growth Uganda-based businesses delivering financial, environmental, and social returns.
+      TUFF invests in food, agriculture, clean technology, energy, and healthcare ventures poised to be both  domestic market leaders and global export players.
+    </p>
   </div>
 </header>
 
@@ -34,22 +37,24 @@
 
   <!-- Portfolio -->
   <div id="portfolio">
-    <h3 class="section-title">Our Portfolio</h3>
+    <h2 class="section-title">Our Portfolio</h2>
   </div>
 
   <div class="portfolio">
 
-    <div class="portfolio-item">
+    <div class="portfolio-item" style="background-image: url('./images/coffee_beans.jpg');">
       <h4 class="portfolio-item-header">Guerilla Summit Coffee</h4>
-      <p class="portfolio-item-text"></p>
+      <p class="portfolio-item-text">
+        Gorilla Summit Coffee selects only the highest quality beans from thousands of cooperative growers across Uganda.
+        Resulting from extensive farmer training and outreach, Gorilla Summit Coffee has received high marks from international coffee cuppings in Europe and the United States. 
+      </p>
     </div>
-    <div class="portfolio-item">
+    <div class="portfolio-item" style="background-image: url('./images/drying_avocados1.jpg');">
       <h4 class="portfolio-item-header">Uganda Avocados</h4>
-      <p class="portfolio-item-text"></p>
-    </div>
-    <div class="portfolio-item">
-      <h4 class="portfolio-item-header">Something Else</h4>
-      <p class="portfolio-item-text"></p>
+      <p class="portfolio-item-text">
+        Uganda Avocados is developing the value chain for the export of processed and fresh avocados from Uganda’s most fertile regions to address
+        skyrocketing global demand and constrained global supply.
+      </p>
     </div>
 
   </div>
@@ -57,10 +62,18 @@
 
   <!-- About Section -->
   <div id="about">
-    <h3 class="section-title">About</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.
+    <h2 class="section-title">About</h2>
+    <p class="about">
+      The Uganda Future Fund (TUFF) deploys capital and human resources in high growth Uganda-based businesses delivering financial, environmental, and social returns.
+      TUFF invests in food, agriculture, clean technology, energy, and healthcare ventures poised to be both  domestic market leaders and global export players.
+    </p>
+    <p class="about">
+      TUFF partners with Uganda’s most capable business leaders, managers, and operators and garners support from stakeholders from the highest levels of commerce and government.
+      Linking Ugandan businesses with international markets and networks, TUFF maximizes both financial returns and social impact to communities across East Africa.
+    </p>
+    <p class="about">
+      In addition to capital, TUFF provides strategic, operational, and technical guidance to its portfolio companies to achieve competitive advantage.
+      TUFF’s robust network of United States-based scientists, researchers and investors delivers world class expertise to Uganda’s most promising changemakers.
     </p>
   </div>
 
@@ -75,34 +88,53 @@
       <p class="bio-item-text">Biography information on this person</p>
     </div>
     <div class="bio-item">
-      <h4 class="bio-item-header">Someone Else</h4>
+      <h4 class="bio-item-header">William Galebach</h4>
       <p class="bio-item-text">Biography information on this person</p>
     </div>
 
   </div>
 
   <!-- Contact Section -->
-  <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Contact</h3>
-    <p>Lets get in touch and talk about your and our next project.</p>
-    <form action="form.asp" target="_blank">
-      <input class="w3-input" type="text" placeholder="Name" required name="Name">
-      <input class="w3-input w3-section" type="text" placeholder="Email" required name="Email">
-      <input class="w3-input w3-section" type="text" placeholder="Subject" required name="Subject">
-      <input class="w3-input w3-section" type="text" placeholder="Comment" required name="Comment">
-      <button class="w3-btn w3-section" type="submit">
-        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-      </button>
-    </form>
+  <div id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact">
+      <p class="contact-text">Contact Us!</p>
+      <form class="contact-form" action="/contact" method="post">
+        <input class="contact-input" type="text" placeholder="Name" required name="Name">
+        <input class="contact-input" type="text" placeholder="Email" required name="Email">
+        <input class="contact-input" type="text" placeholder="Subject" required name="Subject">
+        <textarea class="contact-comment" type="text" placeholder="Comment" required name="Comment" cols="40" rows="5"></textarea>
+        <button class="contact-button" type="submit">
+          <i class="submit-text"></i> Send Message
+        </button>
+      </form>
+    </div>
   </div>
   
 <!-- End page content -->
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
+<footer class="">
 
 </footer>
+
+<script>
+// function showPortfolioText(e) {
+//   this.childNodes[1].classList.add('hide');
+//   this.childNodes[3].classList.remove('hide');
+// }
+
+// function hidePortfolioText(e) {
+//   this.childNodes[3].classList.add('hide');
+//   this.childNodes[1].classList.remove('hide');
+// }
+
+// const portfolioItems = document.querySelectorAll('.portfolio-item');
+// portfolioItems.forEach(item => item.addEventListener('onmouseenter', showPortfolioText));
+
+
+</script>
 
 </body>
 </html>
