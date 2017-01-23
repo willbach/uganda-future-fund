@@ -2,8 +2,8 @@
 
 var nodemailer = require('nodemailer');
 
-const user = 'william.galebach';
-const password = 'gglhfddd';
+const user = '';
+const password = '';
 const sender = 'TUFF Contact Request';
 
 var smtpConfig = {
