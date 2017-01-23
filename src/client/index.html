@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Uganda Futures Fund</title>
+<title>Uganda Future Fund</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
@@ -42,14 +42,14 @@
 
   <div class="portfolio">
 
-    <div class="portfolio-item" style="background-image: url('./images/coffee_beans.jpg');">
+    <div class="portfolio-item" style="background-image: url('./images/coffee_bags.jpg');">
       <h4 class="portfolio-item-header">Guerilla Summit Coffee</h4>
       <p class="portfolio-item-text">
         Gorilla Summit Coffee selects only the highest quality beans from thousands of cooperative growers across Uganda.
         Resulting from extensive farmer training and outreach, Gorilla Summit Coffee has received high marks from international coffee cuppings in Europe and the United States. 
       </p>
     </div>
-    <div class="portfolio-item" style="background-image: url('./images/drying_avocados1.jpg');">
+    <div class="portfolio-item" style="background-image: url('./images/avocados_drying.jpg'); background-position: 0 40%;">
       <h4 class="portfolio-item-header">Uganda Avocados</h4>
       <p class="portfolio-item-text">
         Uganda Avocados is developing the value chain for the export of processed and fresh avocados from Uganda’s most fertile regions to address
@@ -77,7 +77,7 @@
     </p>
   </div>
 
-  <div class="bio">
+  <!--<div class="bio">
 
     <div class="bio-item">
       <h4 class="bio-item-header">Gerald Mbabazi</h4>
@@ -92,21 +92,26 @@
       <p class="bio-item-text">Biography information on this person</p>
     </div>
 
-  </div>
+  </div>-->
 
   <!-- Contact Section -->
   <div id="contact">
     <h2 class="section-title">Contact</h2>
     <div class="contact">
-      <p class="contact-text">Contact Us!</p>
+      <p class="contact-text">
+        Contact us for more information about partnering with us, investments, purchasing from portfolio companies, or strategic consulting.
+      </p>
       <form class="contact-form" action="/contact" method="post">
         <input class="contact-input" type="text" placeholder="Name" required name="Name">
         <input class="contact-input" type="text" placeholder="Email" required name="Email">
         <input class="contact-input" type="text" placeholder="Subject" required name="Subject">
         <textarea class="contact-comment" type="text" placeholder="Comment" required name="Comment" cols="40" rows="5"></textarea>
-        <button class="contact-button" type="submit">
+        <button id="contact-button" type="submit">
           <i class="submit-text"></i> Send Message
         </button>
+        <div id="confirm-submit">
+          Your message has been received and we will contact you shortly!
+        </div>
       </form>
     </div>
   </div>
@@ -115,24 +120,36 @@
 </div>
 
 <!-- Footer -->
-<footer class="">
+<footer>
 
 </footer>
 
 <script>
-// function showPortfolioText(e) {
-//   this.childNodes[1].classList.add('hide');
-//   this.childNodes[3].classList.remove('hide');
+//change the home background image
+const images = ['mountain_landscape.jpg', 'coffee_beans.jpg', 'tea_farmer.jpg'];
+const offsets = ['0% 85%', '0% 0%', '0% 70%']
+let curImg = 1;
+
+function changeHeaderImage(image, offset) {
+  let header = document.getElementById('home');
+  header.style.backgroundImage = `url("./images/${image}")`;
+  header.style.backgroundPosition = offset;
+}
+
+changeHeaderImage(images[0], offsets[0]);
+
+setInterval( () => {
+  changeHeaderImage(images[curImg], offsets[curImg]);
+  curImg++;
+  if(curImg === 3) curImg = 0;
+}, 2500);
+
+//confirm contact us submittal
+// function confirmContact() {
+//   let confirmMsg = document.getElementById('confirm-submit');
+//   confirmMsg.style.display = 'unset';
 // }
-
-// function hidePortfolioText(e) {
-//   this.childNodes[3].classList.add('hide');
-//   this.childNodes[1].classList.remove('hide');
-// }
-
-// const portfolioItems = document.querySelectorAll('.portfolio-item');
-// portfolioItems.forEach(item => item.addEventListener('onmouseenter', showPortfolioText));
-
+// document.getElementById('contact-button').addEventListener('onclick', confirmContact());
 
 </script>
 
