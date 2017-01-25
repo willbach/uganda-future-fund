@@ -70,7 +70,12 @@ header {
   justify-content: left;
   -webkit-transition: background-image 0.3s ease-in-out;
   transition: background-image 0.3s ease-in-out;
+  position:relative;
+  /*-webkit-animation:animatetop 0.4s;
+  animation:animatetop 0.4s;*/
 }
+/*@-webkit-keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}*/
 .mission {
   margin-top: 15vh;
   display: flex;
@@ -247,7 +252,7 @@ footer {
   }
   .portfolio-item {
     width: 80vw;
-    height: 40vh;
+    height: 50vh;
     margin-top: 5vh;
   }
   .portfolio-item:nth-child(1) {
