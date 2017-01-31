@@ -13,6 +13,7 @@ html{
 body {
   margin: 0;
   padding: 0;
+  background-color: #F1EDED;
 }
 a {
   text-decoration: none;
@@ -45,7 +46,7 @@ a {
 
 .navbar-left {
   padding-right: 2vw;
-  padding-left: 2vw;
+  padding-left: 3vw;
 }
 
 .navbar-right {
@@ -63,13 +64,14 @@ a {
 /* Mission */
 header {
   background-size: cover;
-  height: 95vh;
-  margin: 0;
+  height: 90vh;
+  width: 94vw;
+  margin: 0 3vw;
   margin-top: 0px;
   display: flex;
   justify-content: left;
-  -webkit-transition: background-image 0.3s ease-in-out;
-  transition: background-image 0.3s ease-in-out;
+  -webkit-transition: background-image 0.3s cubic-bezier(0,0,1,1);
+  transition: background-image 0.3s cubic-bezier(0,0,1,1);
   position:relative;
   /*-webkit-animation:animatetop 0.4s;
   animation:animatetop 0.4s;*/
@@ -87,11 +89,15 @@ header {
   width: 20vw;
   min-width: 270px;
   height: 55vh;
-  min-height: 385px;
+  min-height: 365px;
   padding: 10px 20px 10px 20px;
   border-radius: 10px;
 }
-
+.mission-title {
+  margin-top: 1vh;
+  text-align: center;
+  width: 100%;
+}
 .mission-text {
   font-size: 18px;
 }
