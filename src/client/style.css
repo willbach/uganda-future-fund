@@ -105,6 +105,8 @@ header {
 /* Content */
 .content {
   margin-top: 5px;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
 /* Portfolio */
